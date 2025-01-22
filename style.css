@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+/* Container */
+#container {
+    display: flex;
+    flex: 1;
+    margin-top: 60px;
+    height: calc(100vh - 100px);
+}
+
+/* Left Menu */
+  /* #left-menu {
+    width: 200px;
+    background-color: #f4f4f4;
+    transition: width 0.3s;
+    display: flex;
+    flex-direction: column; 
+} 
+
+#left-menu.collapsible {
+    width: 50px;
+} */
+
+#left-menu {
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#left-menu.collapsed {
+    transform: translateX(-100%);
+}
+
+
+#left-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#left-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#left-menu button {
+    margin: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#left-menu button:hover {
+    background-color: #0056b3;
+}
+
+/* Main Content */
+#main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Right Panel */
+#right-panel {
+    width: 200px;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+/* Footer */
+#footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
